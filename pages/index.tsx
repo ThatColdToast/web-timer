@@ -5,11 +5,11 @@ const font = Abel({ subsets: ['latin'], weight: "400" })
 
 export default function Home() {
 
-  const [days, setDays] = useState()
-  const [hours, setHours] = useState()
-  const [minutes, setMinutes] = useState()
-  const [seconds, setSeconds] = useState()
-  const [millis, setMillis] = useState()
+  const [days, setDays] = useState<number>(0)
+  const [hours, setHours] = useState<number>(0)
+  const [minutes, setMinutes] = useState<number>(0)
+  const [seconds, setSeconds] = useState<number>(0)
+  const [millis, setMillis] = useState<number>(0)
 
   useEffect(() => {
     const target = new Date("5/7/2023 12:00:00")
