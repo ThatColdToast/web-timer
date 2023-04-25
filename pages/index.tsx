@@ -12,7 +12,7 @@ export default function Home() {
   const [millis, setMillis] = useState<number>(0)
 
   useEffect(() => {
-    const target = new Date("5/7/2023 12:00:00")
+    const target = new Date("5/7/2023 20:00:00")
 
     const interval = setInterval(() => {
       const now = new Date()
@@ -51,7 +51,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between p-28 bg-gradient-to-br from-purple-950 from-25% to-black ${font.className}`}
     >
       <div className="text-4xl">
-        <h1 className="">Time until something important:</h1>
+        <h1 className="text-white">Time until something important:</h1>
         <p className="text-center text-white">{days}:{hours}:{minutes}:{seconds}</p>
 
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
