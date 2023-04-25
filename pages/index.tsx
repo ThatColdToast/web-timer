@@ -39,7 +39,7 @@ export default function Home() {
         (difference % (1000))
       )
       setMillis(mi)
-    }, 50)
+    }, 1000)
 
     return () => {
       clearInterval(interval)
@@ -52,7 +52,7 @@ export default function Home() {
     >
       <div className="text-4xl">
         <h1 className="">Time until something important:</h1>
-        <p className="text-center">{days}:{hours}:{minutes}:{seconds}:{millis}</p>
+        <p className="text-center text-white">{days}:{hours}:{minutes}:{seconds}</p>
 
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
       </div> */}
