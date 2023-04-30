@@ -12,7 +12,7 @@ export default function Home() {
   const [millis, setMillis] = useState<number>(0)
 
   useEffect(() => {
-    const target = new Date("5/7/2023 12:00:00")
+    const target = new Date("5/7/2023 20:00:00")
 
     const interval = setInterval(() => {
       const now = new Date()
@@ -39,7 +39,7 @@ export default function Home() {
         (difference % (1000))
       )
       setMillis(mi)
-    }, 50)
+    }, 1000)
 
     return () => {
       clearInterval(interval)
@@ -52,8 +52,8 @@ export default function Home() {
     >
       <title>Important Timer</title>
       <div className="text-4xl">
-        <h1 className="">Time until something important:</h1>
-        <p className="text-center">{days}:{hours}:{minutes}:{seconds}:{millis}</p>
+        <h1 className="text-white">Time until something important:</h1>
+        <p className="text-center text-white">{days}:{hours}:{minutes}:{seconds}</p>
 
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
       </div> */}
