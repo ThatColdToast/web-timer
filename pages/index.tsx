@@ -12,7 +12,7 @@ export default function Home() {
   const [millis, setMillis] = useState<number>(0)
 
   useEffect(() => {
-    const target = new Date("6/23/2023 12:00:00")
+    const target = new Date("8/11/2023 12:00:00")
 
     const interval = setInterval(() => {
       const now = new Date()
