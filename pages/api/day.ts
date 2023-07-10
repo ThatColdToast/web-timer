@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
 type Data = {
-  day: string;
+  day: Date;
 };
 
 export default function handler(
@@ -38,5 +38,5 @@ export default function handler(
     dayNames[lang as keyof typeof dayNames][dayNum] || dayNames["en"][dayNum];
   /* ------------- WHY TYPESCRIPT WHY??? */
 
-  res.status(200).json({ day: dayName });
+  res.status(200).json({ day: new Date(Date.now()) });
 }
