@@ -10,6 +10,7 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   let lang = req.query.lang?.toString() || "en";
+  let day = parseInt(req.query.day?.toString() || "0");
 
   const dayNum = new Date(Date.now()).getDay();
 
@@ -35,7 +36,7 @@ export default function handler(
   };
 
   const dayName: string =
-    dayNames[lang as keyof typeof dayNames][dayNum] || dayNames["en"][dayNum];
+    dayNames[lang as keyof typeof dayNames][day] || dayNames["en"][day];
   /* ------------- WHY TYPESCRIPT WHY??? */
 
   res.status(200).json({ day: new Date(Date.now()) });
