@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-28 bg-gradient-to-br from-purple-950 from-25% to-black ${font.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between p-28 bg-gradient-to-br from-blue-950 from-25% to-black ${font.className}`}
     >
       <title>Important Timer</title>
       <div className="text-4xl">
