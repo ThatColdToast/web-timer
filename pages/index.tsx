@@ -52,7 +52,7 @@ export default function Home() {
     >
       <title>Important Timer</title>
       <div className="text-4xl">
-        <h1 className="text-white">Time until something important:</h1>
+        {/*<h1 className="text-white">Time until something important:</h1>*/}
         <p className="text-center text-white">{days}:{hours}:{minutes}:{seconds}</p>
 
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
